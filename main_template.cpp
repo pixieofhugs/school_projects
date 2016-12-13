@@ -2,8 +2,11 @@
 //DATE
 //CS163
 
-// I am putting in comment number 1
+<<<<<<< HEAD
 // now I am putting in comment number 2
+=======
+
+>>>>>>> parent of 656b413... comment number 1
 #include<>//whatever I should include
 
 
