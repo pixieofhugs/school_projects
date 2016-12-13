@@ -15,18 +15,18 @@ using namespace std;
 class data
 {
 public:
-     data();
+     data(); 
+     data(const data &);
     ~data();
-void display();
-int  create();
-int  edit(/*data*/);
-int  remove(/*data*/);
-int  compare(/*data*/);
-int  copy(/*&data*/);
+virtual void display();
+virtual int  create();
+//virtual int  edit(/**/);
+virtual int  remove();
+virtual int  compare(const data &);
+virtual int  copy(const data &);
 
 private:
-char* name
-char* type
+
 };
 
 

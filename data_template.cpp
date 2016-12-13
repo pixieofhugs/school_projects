@@ -1,14 +1,28 @@
 #include "data_template.h"
 
+data::data()
+{
+
+}
+
+data::data(const data &)
+{
+
+}
 
 
-void display()
+data::~data()
+{
+
+}
+
+void data::display(/*keyword*/)
 {
 
 }
 
 //***************************************
-int  create()
+int  data::create()
 {
  
 
@@ -16,25 +30,25 @@ int  create()
 
 //***************************************
 
-int  edit(/*data*/)
+int  data::edit(/*keyword*/)
 {
 
 }
 //***************************************
 
-int  remove(/*data*/)
+int  data::remove(/*keyword*/)
 {
 
 }
 //***************************************
 
-int  compare(/*data*/)
+int  data::compare(const data &)
 {
 
 }
 //***************************************
 
-int  copy(/*&data*/)
+int  data::copy(const data &)
 {
 
 }
