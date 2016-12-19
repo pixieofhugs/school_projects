@@ -31,7 +31,7 @@ class my_string
         my_string* explode(char delimiter);
 
     private:
-        char* CUDDLES;
+        char* a_string;
 
 };
 

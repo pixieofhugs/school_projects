@@ -13,29 +13,30 @@ using namespace std;
 #define LIST_H//include guard - seccond
 
 
-struct node
-{
-    //data goes here of whatever type of data
-    node * next;
-};
 class list
 {
     public:
-    int  add_node_sorted(/* data */);
-    int  remove_node();
-    int  search_list(/*data.aspect*/);
-    int  retrieve(/*&data, &data.aspect*/);
+    int  virtual add_node_sorted(data* to_add);
+    int  virtual add_at_head(data* to_add);
+    int  virtual remove_node(char* to_remove); 
+    int  virtual remove_node(int   to_remove);
+    int  search_list(char* keyword);
+    int  search_list(int   keyword);
+    int  retrieve(char* keyword, data to_get); 
+    int  retrieve(int   keyword, data to_get);
     void display();
+    void display_all();
     int  delete_list();
 
     private:
-    node * head;
-    int  add_node_sorted(node *& head, /*data */);
-    int  remove_node(node *& head);
-    int  search_list(node *& head, /*data.aspect*/);
-    int  retrieve(node *& head, /*&data, &data.aspect*/);
-    void display(node * head);
-    int  delete_list(node *& head);
+    data my_data;
+    list *next;
+    int  add_node_sorted(data to_add);
+    int  remove_node();
+    int  search_list();
+    int  retrieve(data to_get);
+    void display();
+    int  remove_all();
     
 };
 

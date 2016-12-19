@@ -6,17 +6,30 @@
 #include "data.h"
 
 //**********************
-int  add_node_sorted(/* data */)//wrapper
+/*
+    int  virtual add_node_sorted(data* to_add);
+    int  virtual add_at_head(data* to_add);
+    int  virtual remove_node(char* to_remove); 
+    int  virtual remove_node(int   to_remove);
+    int  search_list(char* keyword);
+    int  search_list(int   keyword);
+    int  retrieve(char* keyword, data to_get); 
+    int  retrieve(int   keyword, data to_get);
+    void display();
+    void display_all();
+
+*/
+
+list::list()
 {
-    return add_node_sorted(head, /*data*/);
+
 }
 
-int  add_node_sorted(node *& head, /*data */)//recursive
+int list::add_node_sorted()//recursive
 {
-    if(!head)
+    if(!data && !next)
     {
-        head = new node;
-        head -> data.copy;
+        data.copy(to_copy);
         head-> next = NULL;
         return 1;
     }
