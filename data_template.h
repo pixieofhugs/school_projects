@@ -1,11 +1,12 @@
-//name
-//date
-//class
+//Molly shove
+//1/7/17
+//CS202
 
 
 #include <iostream>
 #include <cctype>
 #include <cstring>
+#include "string.h"
 
 using namespace std;
 
@@ -26,7 +27,7 @@ virtual int  compare(const data &);
 virtual int  copy(const data &);
 
 private:
-
+//my_straing name
 };
 
 
